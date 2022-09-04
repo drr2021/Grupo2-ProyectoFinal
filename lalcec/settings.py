@@ -39,13 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'pagina.apps.PaginaConfig', 
+    'pagina', 
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
-    'django_extensions',
     'crispy_forms',
     'crispy_bootstrap5',
 ]
@@ -98,12 +97,8 @@ WSGI_APPLICATION = 'lalcec.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'OnePiece',
-        'USER': 'postgres',
-        'PASSWORD': 'mane123',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
 
